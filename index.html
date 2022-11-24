@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond</title>
+</head>
+
+<body>
+    <h1>Diamond in Console</h1>
+    <script>
+
+        let x = 4;
+        for (i = 0; i < 9; i++) {
+            let line = "";
+
+            for (j = 0; j < 9; j++) {
+                if ((j >= x) && (j <= (8 - x))) {
+                    line += "*";
+                } else {
+                    line += " ";
+                }
+            }
+
+            console.log(line);
+            if (i < 4) {
+                x--;
+            } else {
+                x++;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
